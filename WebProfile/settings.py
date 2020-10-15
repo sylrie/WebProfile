@@ -28,7 +28,7 @@ if os.environ.get('ENV') == 'PRODUCTION':
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'webprofile.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'srprofile.herokuapp.com']
 
 
 # Application definition
