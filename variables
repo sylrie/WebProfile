@@ -1,0 +1,4 @@
+Set-Item env:\SECRET_KEY -value 'cqdhI~HmN\r>={h6{PcPI}1;op#"V\\nDCH[f:VAdrazwT-qo^'
+Set-Item env:\DB_PASSWORD -value 'CDBloule30'
+Set-Item env:\DB_USER -value 'sylvain'
+Set-Item env:\DB_NAME -value 'webprofile'
