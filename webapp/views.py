@@ -5,11 +5,11 @@ from .models import DevTool
 
 def index(request):
     """ Home page """
-    
-    tools = DevTool.objects.all()
-    print(tools)
+    try:
+        tools = DevTool.objects.all()
+    except:
+        tools = None
     context = {
         'tools': tools
-        
     }
     return render(request, 'webapp/home.html', context)
