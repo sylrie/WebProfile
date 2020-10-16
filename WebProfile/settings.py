@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'srprofile.herokuapp.com']
 
 INSTALLED_APPS = [
     # Apps
+    'user',
     'webapp',
 
     # Django
