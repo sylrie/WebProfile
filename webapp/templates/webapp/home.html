@@ -57,7 +57,8 @@
 		</div>
 		<div class="row">
 			{% for tool in tools %}
-			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.name|add:'.jpg' as image %}
+			{% with 'webapp/assets/img/portfolio/full/'|add:tool.name|add:'.jpg' as image %}
+			
 			<div class="col-lg-4 col-sm-6 mb-5">
 				<div class="portfolio-item">
 					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
@@ -68,7 +69,7 @@
 						<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}"/>
 					
 						<div class="portfolio-caption">
-							<div class="portfolio-caption-heading">{{ tool.name }}</div>
+							<div class="portfolio-caption-heading" style="text-transform: uppercase;">{{ tool.name }}</div>
 							<div class="portfolio-caption-subheading text-muted">{{ tool.tool_type }}</div>
 						</div>
 					</a>
@@ -83,8 +84,8 @@
 <!-- Portfolio Modals-->
 
 {% for tool in tools %} 
+{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.name|add:'.jpg' as image %}
 
-{% with 'webapp/assets/img/portfolio/full/'|add:tool.name|add:'.jpg' as image %}
 <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -95,7 +96,7 @@
 						<div class="modal-body">
 							<!-- Project Details Go Here-->
 							
-							<h2 class="">{{ tool.name }}</h2>
+							<h2 style="text-transform: uppercase;">{{ tool.name }}</h2>
 							{% if tool.acronym %}
 							<p class="item-intro text-muted">{{ tool.acronym }}</p>
 							{% endif %}
