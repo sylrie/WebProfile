@@ -27,6 +27,8 @@ class DevTool(models.Model):
     info = models.TextField(null=False)
     info_source = models.CharField(max_length=100, blank=True, null=True)
     source_name = models.CharField(max_length=100, blank=True, null=True)
+    img = models.CharField(max_length=50, blank=True, null=True)
+    logo = models.CharField(max_length=50, blank=True, null=True)
     
     class Meta:
         ordering = ['family']
