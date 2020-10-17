@@ -57,7 +57,7 @@
 		</div>
 		<div class="row">
 			{% for tool in tools %}
-			{% with 'webapp/assets/img/portfolio/full/'|add:tool.name|add:'.jpg' as image %}
+			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.name|add:'.jpg' as image %}
 			<div class="col-lg-4 col-sm-6 mb-5">
 				<div class="portfolio-item">
 					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
@@ -83,7 +83,8 @@
 <!-- Portfolio Modals-->
 
 {% for tool in tools %} 
-{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.name|add:'.jpg' as image %}
+
+{% with 'webapp/assets/img/portfolio/full/'|add:tool.name|add:'.jpg' as image %}
 <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -102,8 +103,8 @@
 							<p>{{ tool.info }}</p>
 							<ul class="list-inline">
 								<li>Source: <a href="{{ tool.info_source }}" target ="_blank">{{ tool.source_name }}</a></li>
-								<li>Categorie: {{ tool.tool_type }}</li>
-								<li>{{ tool.tool_type.info }}</li>
+								<li>Categorie: <strong>{{ tool.tool_type }}</strong></li>
+								<li><i>{{ tool.tool_type.info }}</i></li>
 							</ul>
 							<button class="btn btn-primary" data-dismiss="modal" type="button">
 								<i class="fas fa-times mr-1"></i>Fermer
