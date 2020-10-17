@@ -29,9 +29,9 @@ class DevTool(models.Model):
     source_name = models.CharField(max_length=100, blank=True, null=True)
     img = models.CharField(max_length=50, blank=True, null=True)
     logo = models.CharField(max_length=50, blank=True, null=True)
-    
+
     class Meta:
-        ordering = ['family']
+        ordering = ['tool_type']
 
     def __str__(self):
         return self.name
