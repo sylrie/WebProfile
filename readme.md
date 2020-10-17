@@ -6,7 +6,7 @@
 ![Version-1](https://img.shields.io/badge/Version-1-blue.svg)
 
 <p align="center">
-  <img src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/working.jpg">
+  <img src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/working.jpg">
 </p>
 
 ## DEVICES
@@ -17,9 +17,9 @@
 ![Large](https://img.shields.io/badge/Large->992px-red.svg)
 ![ExtraLarge](https://img.shields.io/badge/ExtraLarge->1200px-red.svg)
 <p align="center">
-    <img width=30% src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/responsive-design.png">
+    <img width=70% src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/responsive-design.png">
 </p>
 
 ## TOOLS
 <p align="center">
-  <img width=50% src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/tools.png">
+  <img width=70% src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/tools.png">
