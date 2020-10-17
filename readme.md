@@ -17,7 +17,7 @@
 ![Large](https://img.shields.io/badge/Large->992px-red.svg)
 ![ExtraLarge](https://img.shields.io/badge/ExtraLarge->1200px-red.svg)
 <p align="center">
-    <img width=30% src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/responsive-design.png">
+    <img width=30% src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/responsive-design.png">
 </p>
 
 ## TOOLS
