@@ -6,7 +6,7 @@
 ![Version-1](https://img.shields.io/badge/Version-1-blue.svg)
 
 <p align="center">
-  <img src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/working.jpg">
+  <img src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/working.jpg">
 </p>
 
 ## DEVICES
@@ -22,4 +22,4 @@
 
 ## TOOLS
 <p align="center">
-  <img width=50% src="https://github.com/sylrie/WebProfile/blob/master/WebProfile/readmedocs/tools.png">
+  <img width=50% src="https://github.com/sylrie/WebProfile/blob/master/readmedocs/tools.png">
