@@ -31,7 +31,7 @@ class DevTool(models.Model):
     logo = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
-        ordering = ['family', 'tool_type']
+        ordering = ['-family', '-tool_type']
 
     def __str__(self):
         return self.name
