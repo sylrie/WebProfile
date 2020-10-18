@@ -163,14 +163,14 @@
 			<h2 class="section-heading text-uppercase">Les outils</h2>
 			<h3 class="section-subheading text-muted">Quelques outils de développements.</h3>
 		</div>
-		{% for type in tool_type %}
+		<!--{% for type in tool_type %}
 		<div class="row w-100 justify-content-center m-0">
 			<div class="text-center">
 				<h3 class="text-uppercase">{{ type }}</h2>
 				<h3 class="text-muted">{{ type.info }}</h3>
 			</div>
 		</div>
-		{% endfor %}
+		{% endfor %}-->
 		<div class="row">
 			{% for tool in tools %}
 			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
