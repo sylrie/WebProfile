@@ -163,14 +163,14 @@
 			<h2 class="section-heading text-uppercase">Les outils</h2>
 			<h3 class="section-subheading text-muted">Quelques outils de développements.</h3>
 		</div>
-		<!--{% for type in tool_type %}
+		{% for type in tool_type %}
 		<div class="row w-100 justify-content-center m-0">
 			<div class="text-center">
 				<h3 class="text-uppercase">{{ type }}</h2>
 				<h3 class="text-muted">{{ type.info }}</h3>
 			</div>
 		</div>
-		{% endfor %}-->
+		{% endfor %}
 		<div class="row">
 			{% for tool in tools %}
 			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
@@ -212,15 +212,20 @@
 							<!-- Project Details Go Here-->
 							
 							<h2 class="mb-4">{{ tool.name }}</h2>
+							
 							{% if tool.acronym %}
 							<p class="item-intro text-muted">{{ tool.acronym }}</p>
 							{% endif %}
+
 							<img class="img-fluid d-block mx-auto" src="{% static image %}" style="max-height: 300px;" alt="{{ image }}" />
 							<p>{{ tool.info }}</p>
 							<ul class="list-inline">
 								<li>Source: <a href="{{ tool.info_source }}" target ="_blank">{{ tool.source_name }}</a></li>
-								<li>Categorie: <strong>{{ tool.tool_type }}</strong></li>
-								<li><i>{{ tool.tool_type.info }}</i></li>
+								<br>
+								<li>Famille: <strong>{{ tool.family.name }}</strong></li>
+								<li>Categorie: <strong>{{ tool.tool_type }}*</strong></li>
+								<li><i>*{{ tool.tool_type.info }}</i></li>
+								
 							</ul>
 							<button class="btn btn-primary" data-dismiss="modal" type="button">
 								<i class="fas fa-times mr-1"></i>Fermer
