@@ -5,7 +5,8 @@ from django.db import models
 class ToolFamily(models.Model):
     """ Tool Families """
     name = models.CharField(max_length=100, unique=True)
-
+    info = models.TextField(blank=True)
+    
     def __str__(self):
         return self.name
 

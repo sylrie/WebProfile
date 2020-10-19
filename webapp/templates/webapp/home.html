@@ -223,8 +223,10 @@
 								<li>Source: <a href="{{ tool.info_source }}" target ="_blank">{{ tool.source_name }}</a></li>
 								<br>
 								<li>Famille: <strong>{{ tool.family.name }}</strong></li>
-								<li>Categorie: <strong>{{ tool.tool_type }}*</strong></li>
-								<li><i>*{{ tool.tool_type.info }}</i></li>
+								<li><i>{{ tool.family.info }}</i></li>
+								<br>
+								<li>Categorie: <strong>{{ tool.tool_type }}</strong></li>
+								<li><i>{{ tool.tool_type.info }}</i></li>
 								
 							</ul>
 							<button class="btn btn-primary" data-dismiss="modal" type="button">
