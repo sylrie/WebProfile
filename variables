@@ -3,8 +3,10 @@ Set-Item env:\DB_PASSWORD -value 'CDBloule30'
 Set-Item env:\DB_USER -value 'sylvain'
 Set-Item env:\DB_NAME -value 'freelance'
 
+Set-Item env:\ENV -value 'PRODUCTION'
+
 Set-Item env:\EMAIL_HOST -value 'smtp.gmail.com'
-Set-Item env:\EMAIL_HOST_USER -value 'eorders.mfpservices@gmail.com'
+Set-Item env:\EMAIL_HOST_USER -value 'sylvain.rieutor.dev@gmail.com'
 Set-Item env:\EMAIL_HOST_PASSWORD -value 'CDBloule30'
 Set-Item env:\DEFAULT_FROM_EMAIL -value '<noreply@webprofile.com>'
 
