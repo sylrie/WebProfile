@@ -1,325 +1,39 @@
 {% extends 'webapp/base.html' %}
-{% block title %}SR - Acceuil{% endblock %}
 {% load static %}
 
 {% block content %}
-<!-- Masthead-->
-<header class="masthead">
-	<div class="container-fluid">
-		<div class="masthead-subheading">Développeur d'application</div>
-		<div class="masthead-heading text-uppercase">Web - Django</div>
-		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">En savoir plus</a>
-	</div>
-</header>
+<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'webapp/img/intro.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Fresh Coffee</span>
+            <span class="section-heading-lower">Worth Drinking</span>
+          </h2>
+          <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Services-->
-<section class="page-section" id="services">
-	<div class="container-fluid">
-		<div class="text-center">
-			<h2 class="section-heading text-uppercase">Services</h2>
-			<h3 class="section-subheading text-muted">Détailler ici cette section.</h3>
-		</div>
-		<div class="row text-center">
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">E-Commerce</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Responsive Design</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-database fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Database</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Messages</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-users fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Authentification</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Web Security</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x">
-					<i class="fas fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-poll fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="my-3">Results</h4>
-				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
-			</div>
-		</div>
-		<div class="row text-center">
-			{% for tool in tools %} 
-			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
-			<div class="col-md-6">
-						
-				<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}" style="max-height: 50px;"/>
-
-			</div>
-			{% endwith %}
-			{% endfor %}
-		</div>
-	</div>
-</section>
-
-<!-- About-->
-<section class="page-section" id="about">
-	<div class="container">
-		<div class="text-center">
-			<h2 class="section-heading text-uppercase">About</h2>
-			<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-		</div>
-		<ul class="timeline">
-			<li>
-				<div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'webapp/assets/img/about/1.jpg' %}" alt="" /></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4>2009-2011</h4>
-						<h4 class="subheading">Our Humble Beginnings</h4>
-					</div>
-					<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-				</div>
-			</li>
-			<li class="timeline-inverted">
-				<div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'webapp/assets/img/about/2.jpg' %}" alt="" /></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4>March 2011</h4>
-						<h4 class="subheading">An Agency is Born</h4>
-					</div>
-					<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-				</div>
-			</li>
-			<li>
-				<div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'webapp/assets/img/about/3.jpg' %}" alt="" /></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4>December 2012</h4>
-						<h4 class="subheading">Transition to Full Service</h4>
-					</div>
-					<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-				</div>
-			</li>
-			<li class="timeline-inverted">
-				<div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'webapp/assets/img/about/4.jpg' %}" alt="" /></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4>July 2014</h4>
-						<h4 class="subheading">Phase Two Expansion</h4>
-					</div>
-					<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-				</div>
-			</li>
-			<li class="timeline-inverted">
-				<div class="timeline-image">
-					<h4>
-						Be Part
-						<br />
-						Of Our
-						<br />
-						Story!
-					</h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-
-<!-- Team-->
-<section class="page-section bg-light" id="team">
-	<div class="container">
-		<div class="text-center">
-			<h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-			<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-		</div>
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="team-member">
-					<img class="mx-auto rounded-circle" src="{% static 'webapp/assets/img/team/1.jpg' %}" alt="" />
-					<h4>Kay Garland</h4>
-					<p class="text-muted">Lead Designer</p>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="team-member">
-					<img class="mx-auto rounded-circle" src="{% static 'webapp/assets/img/team/2.jpg' %}" alt="" />
-					<h4>Larry Parker</h4>
-					<p class="text-muted">Lead Marketer</p>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="team-member">
-					<img class="mx-auto rounded-circle" src="{% static 'webapp/assets/img/team/3.jpg' %}" alt="" />
-					<h4>Diana Petersen</h4>
-					<p class="text-muted">Lead Developer</p>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-		</div>
-	</div>
-</section>
-
-<!-- Portfolio Grid-->
-<section class="page-section bg-light" id="portfolio">
-	<div class="container" id="tools">
-		<div class="text-center">
-			<h2 class="section-heading text-uppercase">Les outils</h2>
-			<h3 class="section-subheading text-muted">Quelques outils de développements.</h3>
-		</div>
-	</div>
-	{% for type in tool_type %}
-	<div class="container pb-4">
-		<div class="row justify-content-center">
-			<div class="row col-lg-6 col-sm-11 bg-white align-items-center justify-content-between pt-1 m-0">
-				<div class="col-10 text-left">
-					<h3 class="text-uppercase">{{ type }}</h3>
-					<p class="text-muted"><i>{{ type.info }}</i></p>
-				</div>
-				<div class="col-2 text-center" onclick="displayElt('{{ type }}', '{{ type }}button')">
-					<button class="btn btn-primary" type="button" id="{{ type }}button">
-						<i class="fas fa-plus-circle fa-lg"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="container" id="{{ type }}" style="display: none;">
-			<div class="row justify-content-center">
-				{% for tool in tools %}
-				{% if type == tool.tool_type %}
-				{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
-				<div class="col-lg-3 col-sm-6 my-4">
-					<div class="portfolio-item">
-						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
-							<div class="portfolio-hover ">
-								<div class="portfolio-hover-content "><i class="fas fa-plus fa-3x"></i></div>
-							</div>
-							
-							<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}"/>
-						
-							<div class="portfolio-caption">
-								<div class="portfolio-caption-heading">{{ tool.name }}</div>
-								<div class="portfolio-caption-subheading text-muted">{{ tool.tool_type }}</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				{% endwith %}
-				{% endif %}
-				{% endfor %}
-			</div>
-		</div>	
-	</div>
-	{% endfor %}
-</section>
-
-<!-- Portfolio Modals-->
-{% for tool in tools %} 
-{% with 'webapp/assets/img/portfolio/full/'|add:tool.img as image %}
-
-<div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<img src="{% static 'webapp/assets/img/close-icon.svg' %}" alt="Close modal" />
-			</div>
-			<div class="container-fluid">
-				<div class="row justify-content-center">
-					<div class="col-lg-8">
-						<div class="modal-body">
-							<!-- Project Details Go Here-->
-							
-							<h2 class="mb-4">{{ tool.name }}</h2>
-							
-							{% if tool.acronym %}
-							<p class="item-intro text-muted">{{ tool.acronym }}</p>
-							{% endif %}
-
-							<img class="img-fluid d-block mx-auto" src="{% static image %}" style="max-height: 300px;" alt="{{ image }}" />
-							<p>{{ tool.info }}</p>
-							<ul class="list-inline">
-								<li>Source: <a href="{{ tool.info_source }}" target ="_blank">{{ tool.source_name }}</a></li>
-								<br>
-								<li>Famille: <strong>{{ tool.family.name }}</strong></li>
-								<li><i>{{ tool.family.info }}</i></li>
-								<br>
-								<li>Categorie: <strong>{{ tool.tool_type }}</strong></li>
-								<li><i>{{ tool.tool_type.info }}</i></li>
-								
-							</ul>
-							<button class="btn btn-primary" data-dismiss="modal" type="button">
-								<i class="fas fa-times mr-1"></i>Fermer
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-{% endwith %}
-{% endfor %}
-
-{% include 'webapp/contact.html' %}
-<!-- Clients-->
-<div class="py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-6 my-3">
-				<a href="#!"><img class="img-fluid d-block mx-auto" src="{% static 'webapp/assets/img/logos/envato.jpg' %}" alt="" /></a>
-			</div>
-			<div class="col-md-3 col-sm-6 my-3">
-				<a href="#!"><img class="img-fluid d-block mx-auto" src="{% static 'webapp/assets/img/logos/designmodo.jpg' %}" alt="" /></a>
-			</div>
-			<div class="col-md-3 col-sm-6 my-3">
-				<a href="#!"><img class="img-fluid d-block mx-auto" src="{% static 'webapp/assets/img/logos/themeforest.jpg' %}" alt="" /></a>
-			</div>
-			<div class="col-md-3 col-sm-6 my-3">
-				<a href="#!"><img class="img-fluid d-block mx-auto" src="{% static 'webapp/assets/img/logos/creative-market.jpg' %}" alt="" /></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-   
-{% include 'webapp/footer.html' %}        
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Our Promise</span>
+              <span class="section-heading-lower">To You</span>
+            </h2>
+            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>   
 {% endblock %}

@@ -1,41 +1,50 @@
+{% load static %}
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">
         <div class="text-center">
-            
-            <h4 class="section-heading text-light mb-4">Un projet, une idée, un dédut d'idée ?</h4>
             <h2 class="section-heading text-uppercase">Contactez moi</h2>
+            <h4 class="section-heading text-light mb-4">Un projet, une idée, un dédut d'idée ?</h4>
+            
         </div>
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
+            {% csrf_token %}
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input class="form-control" id="name" type="text" placeholder="Nom *"
-                            required="required" data-validation-required-message="Merci de saisir votre nom." />
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
+                            required="required"/>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="email" type="email" placeholder="Email *"
-                            required="required" data-validation-required-message="Merci de saisir votre adresse email." />
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                            required="required"/>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group mb-md-0">
-                        <input class="form-control" id="phone" type="tel" placeholder="Téléphone *"
-                            required="required" data-validation-required-message="Merci de saisir votre numérode de téléphone." />
+                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone *"
+                            required="required" />
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-group form-group-textarea mb-md-0">
-                        <textarea class="form-control" id="message" placeholder="Votre Message *"
-                            required="required" data-validation-required-message="Le message ne peut être vide."></textarea>
+                    <div class="form-group form-group-textarea">
+                        <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
+                            required="required"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
             </div>
             <div class="text-center">
                 <div id="success"></div>
-                <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Envoyer</button>
+                
+                <button class="btn btn-primary btn-xl text-uppercase" onclick="loadingGif()" id="sendButton" type="post">Envoyer</button>
+
+            </div>
+            <div class="container-fluid justify-content-center text-center" id="load-gif" style="display: none;">
+      
+		    	<img src="{% static 'webapp/assets/img/loader.gif' %}" alt="" style="max-height: 80px;">
+		
             </div>
         </form>
     </div>
