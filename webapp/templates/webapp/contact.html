@@ -1,51 +1,62 @@
+{% extends 'webapp/base.html' %}
 {% load static %}
+{% block content %}
 <!-- Contact-->
 <section class="page-section" id="contact">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Contactez moi</h2>
-            <h4 class="section-heading text-light mb-4">Un projet, une idée, un dédut d'idée ?</h4>
+    <div class="container cta">
+        <div class="cta-inner">
+            {% if message %}
             
-        </div>
-        <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
-            {% csrf_token %}
-            <div class="row align-items-stretch mb-5">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
-                            required="required"/>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
-                            required="required"/>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group mb-md-0">
-                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone *"
-                            required="required" />
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group form-group-textarea">
-                        <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
-                            required="required"></textarea>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-            </div>
             <div class="text-center">
-                <div id="success"></div>
+                <div id="success">
+                    <div class="pb-3">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                    </div>
+                <div class="pb-3 align-items-stretch">
+                    <b>{{ message }}</b>
+                </div>
+                <form action="{% url 'index' %}" method="post">
+                    {% csrf_token %}
+                    <button class="btn btn-primary btn text-uppercase" type="post">Ok</button>
+                </form>
+            </div>
+            {% else %}
+            <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
+                {% csrf_token %}
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
+                                required="required"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                                required="required"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea">
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
+                                required="required"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
+                </div>
                 
-                <button class="btn btn-primary btn-xl text-uppercase" onclick="loadingGif()" id="sendButton" type="post">Envoyer</button>
-
-            </div>
-            <div class="container-fluid justify-content-center text-center" id="load-gif" style="display: none;">
-      
-		    	<img src="{% static 'webapp/assets/img/loader.gif' %}" alt="" style="max-height: 80px;">
-		
-            </div>
-        </form>
+            </form>
+            {% endif %}
+        </div>
     </div>
 </section>
+{% endblock %}

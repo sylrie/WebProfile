@@ -10,6 +10,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('portfolio', views.portfolio, name='portfolio'),
     path('tools', views.tools, name='tools'),
+    path('credits', views.credits, name='credits'),
 
-    path('webapp/contact-mail', views.contact_mail, name='contact_mail'),
+    path('contact-mail', views.contact_mail, name='contact_mail'),
 ]
