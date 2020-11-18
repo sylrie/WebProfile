@@ -7,20 +7,20 @@
 <header class="masthead">
 	<div class="container-fluid">
 		<div class="masthead-subheading">Développeur d'application</div>
-		<div class="masthead-heading text-uppercase">Bienvenue!</div>
-		<!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">C'est quoi?</a>-->
+		<div class="masthead-heading text-uppercase">Web - Django</div>
+		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">En savoir plus</a>
 	</div>
 </header>
 
 <!-- Services-->
 <section class="page-section" id="services">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="text-center">
 			<h2 class="section-heading text-uppercase">Services</h2>
 			<h3 class="section-subheading text-muted">Détailler ici cette section.</h3>
 		</div>
 		<div class="row text-center">
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<span class="fa-stack fa-4x">
 					<i class="fas fa-circle fa-stack-2x text-primary"></i>
 					<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -28,7 +28,7 @@
 				<h4 class="my-3">E-Commerce</h4>
 				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<span class="fa-stack fa-4x">
 					<i class="fas fa-circle fa-stack-2x text-primary"></i>
 					<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -36,7 +36,31 @@
 				<h4 class="my-3">Responsive Design</h4>
 				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-3">
+				<span class="fa-stack fa-4x">
+					<i class="fas fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-database fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="my-3">Database</h4>
+				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
+			</div>
+			<div class="col-md-3">
+				<span class="fa-stack fa-4x">
+					<i class="fas fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="my-3">Messages</h4>
+				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
+			</div>
+			<div class="col-md-3">
+				<span class="fa-stack fa-4x">
+					<i class="fas fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-users fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="my-3">Authentification</h4>
+				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
+			</div>
+			<div class="col-md-3">
 				<span class="fa-stack fa-4x">
 					<i class="fas fa-circle fa-stack-2x text-primary"></i>
 					<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -44,11 +68,30 @@
 				<h4 class="my-3">Web Security</h4>
 				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
 			</div>
+			<div class="col-md-3">
+				<span class="fa-stack fa-4x">
+					<i class="fas fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-poll fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="my-3">Results</h4>
+				<p class="text-muted">Détailler ici ou voir dans la bdd pour expliquer ce services.</p>
+			</div>
+		</div>
+		<div class="row text-center">
+			{% for tool in tools %} 
+			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
+			<div class="col-md-6">
+						
+				<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}" style="max-height: 50px;"/>
+
+			</div>
+			{% endwith %}
+			{% endfor %}
 		</div>
 	</div>
 </section>
 
-<!-- About
+<!-- About-->
 <section class="page-section" id="about">
 	<div class="container">
 		<div class="text-center">
@@ -109,9 +152,9 @@
 			</li>
 		</ul>
 	</div>
-</section>-->
+</section>
 
-<!-- Team
+<!-- Team-->
 <section class="page-section bg-light" id="team">
 	<div class="container">
 		<div class="text-center">
@@ -154,51 +197,65 @@
 			<div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
 		</div>
 	</div>
-</section>-->
+</section>
 
 <!-- Portfolio Grid-->
 <section class="page-section bg-light" id="portfolio">
-	<div class="container">
+	<div class="container" id="tools">
 		<div class="text-center">
 			<h2 class="section-heading text-uppercase">Les outils</h2>
 			<h3 class="section-subheading text-muted">Quelques outils de développements.</h3>
 		</div>
-		<!--{% for type in tool_type %}
-		<div class="row w-100 justify-content-center m-0">
-			<div class="text-center">
-				<h3 class="text-uppercase">{{ type }}</h2>
-				<h3 class="text-muted">{{ type.info }}</h3>
-			</div>
-		</div>
-		{% endfor %}-->
-		<div class="row">
-			{% for tool in tools %}
-			{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
-			<div class="col-lg-3 col-sm-6 my-4">
-				<div class="portfolio-item">
-					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
-						<div class="portfolio-hover ">
-							<div class="portfolio-hover-content "><i class="fas fa-plus fa-3x"></i></div>
-						</div>
-						
-						<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}"/>
-					
-						<div class="portfolio-caption">
-							<div class="portfolio-caption-heading">{{ tool.name }}</div>
-							<div class="portfolio-caption-subheading text-muted">{{ tool.tool_type }}</div>
-						</div>
-					</a>
+	</div>
+	{% for type in tool_type %}
+	<div class="container pb-4">
+		<div class="row justify-content-center">
+			<div class="row col-lg-6 col-sm-11 bg-white align-items-center justify-content-between pt-1 m-0">
+				<div class="col-10 text-left">
+					<h3 class="text-uppercase">{{ type }}</h3>
+					<p class="text-muted"><i>{{ type.info }}</i></p>
+				</div>
+				<div class="col-2 text-center" onclick="displayElt('{{ type }}', '{{ type }}button')">
+					<button class="btn btn-primary" type="button" id="{{ type }}button">
+						<i class="fas fa-plus-circle fa-lg"></i>
+					</button>
 				</div>
 			</div>
-			{% endwith %}
-			{% endfor %}
 		</div>
+		<div class="container" id="{{ type }}" style="display: none;">
+			<div class="row justify-content-center">
+				{% for tool in tools %}
+				{% if type == tool.tool_type %}
+				{% with 'webapp/assets/img/portfolio/thumbnail/'|add:tool.logo as image %}
+				<div class="col-lg-3 col-sm-6 my-4">
+					<div class="portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
+							<div class="portfolio-hover ">
+								<div class="portfolio-hover-content "><i class="fas fa-plus fa-3x"></i></div>
+							</div>
+							
+							<img class="img-fluid" src="{% static image %}" alt="photo {{ tool.name }}"/>
+						
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">{{ tool.name }}</div>
+								<div class="portfolio-caption-subheading text-muted">{{ tool.tool_type }}</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				{% endwith %}
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>	
 	</div>
+	{% endfor %}
 </section>
 
 <!-- Portfolio Modals-->
 {% for tool in tools %} 
 {% with 'webapp/assets/img/portfolio/full/'|add:tool.img as image %}
+
 <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -242,7 +299,8 @@
 {% endwith %}
 {% endfor %}
 
-<!-- Clients
+{% include 'webapp/contact.html' %}
+<!-- Clients-->
 <div class="py-5">
 	<div class="container">
 		<div class="row">
@@ -260,8 +318,8 @@
 			</div>
 		</div>
 	</div>
-</div>-->
+</div>
 
-{% include 'webapp/contact.html' %}   
+   
 {% include 'webapp/footer.html' %}        
 {% endblock %}

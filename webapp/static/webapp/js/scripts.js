@@ -54,3 +54,24 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+// function switch display on click 
+function displayElt(id, idButton) {
+
+    var elt = document.getElementById(id);
+    var button = document.getElementById(idButton)
+   
+    if (elt.style.display === "none") {
+        elt.style.display = "block";
+        if (idButton){
+            button.innerHTML = '<i class="fas fa-minus-circle fa-lg"></i>';
+            
+        }
+        
+    } else {
+        elt.style.display = "none";
+        if (idButton){
+            button.innerHTML = '<i class="fas fa-plus-circle fa-lg"></i>';
+        }
+    }
+  }
