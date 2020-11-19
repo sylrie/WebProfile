@@ -25,18 +25,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 if os.environ.get('ENV') == 'PRODUCTION':
     DEBUG = False
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'srprofile.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'sr-developpeur.herokuapp.com']
 
 if os.environ.get('ENV') == 'PRODUCTION':
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+    DEFAULT_FROM_EMAIL = '<noreply@webprofile.com>'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
 else:
