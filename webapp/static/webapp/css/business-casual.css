@@ -105,13 +105,12 @@ p {
   color:  #e45643;
 }
 
-.link {
+a.link {
   color: #e45643;
 }
 .link:hover{
   color: rgba(252, 4, 4, 0.732);
   text-decoration: none;
-
 }
 
 .btn-xl {

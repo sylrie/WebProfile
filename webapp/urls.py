@@ -11,6 +11,5 @@ urlpatterns = [
     path('portfolio', views.portfolio, name='portfolio'),
     path('tools', views.tools, name='tools'),
     path('credits', views.credits, name='credits'),
-
     path('contact-mail', views.contact_mail, name='contact_mail'),
 ]

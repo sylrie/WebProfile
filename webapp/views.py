@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
-from django.core.mail import send_mail as sm
+from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from .models import DevTool, ToolType
+
 from .forms import ContactForm
 
 def index(request):
@@ -89,7 +89,7 @@ def contact_mail(request):
             }
 
             msg_html = render_to_string('webapp/email.html', data)
-            res = sm(
+            send_mail(
                 subject = F"Demande de contact de {name}",
                 message=message,
                 html_message=msg_html,
@@ -98,7 +98,9 @@ def contact_mail(request):
                 fail_silently=False,
             )
 
+            
             message = "Votre message à bien été envoyé !"
+            
             
         
     context = {
