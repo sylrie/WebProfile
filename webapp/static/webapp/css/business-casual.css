@@ -69,7 +69,7 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
 }
 
@@ -89,6 +89,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+  transition: 0.2s;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
@@ -100,6 +101,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: rgba(252, 4, 4, 0.732);
+  transform: scale(1.2);
 }
 #mainNav .navbar-nav .nav-item.active .nav-link:hover {
   color:  #e45643;
@@ -164,6 +166,36 @@ a.link {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+.cta-inner-tool {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color:rgba(21, 15, 47, 0.109);
+}
+
+.img-zoom:hover {
+  transform: scale(1.2);
+  
+}
+.img-zoom {
+  transition: 0.4s;
+  filter: saturate(2); 
+      -webkit-filter: saturate(2);
+}
+
+.modal-header {
+  color: #e45643;
+  font-size: 2rem;
+  border-color: #e45643;
+}
+.modal-footer {
+  border-color: #e45643;
+}
+
+.modal-content {
+  background-color:rgba(21, 15, 47, 0.9);
+  color: white;
+}
 .cta .cta-inner:before {
   border-radius: 0.5rem;
   content: '';
@@ -207,22 +239,6 @@ a.link {
   }
 }
 
-.list-hours {
-  font-size: 0.9rem;
-}
-
-.list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.list-hours .list-hours-item.today {
-  font-weight: bold;
-  color:  #e45643;
-}
-
 @media (min-width: 992px) {
   .list-hours {
     width: 50%;
@@ -253,11 +269,13 @@ a.link {
 .btn-primary {
   background-color:  #e45643;
   border-color:  #e45643;
+  transition: 0.4s;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: rgba(252, 4, 4, 1);
   border-color:  rgba(252, 4, 4, 0.732);
+  transform: scale(1.2);
 }
 
 .font-weight-light {

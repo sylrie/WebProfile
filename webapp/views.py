@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
+from .models import Tools
 from .forms import ContactForm
 
 def index(request):
@@ -19,12 +20,10 @@ def index(request):
 def tools(request):
     """ tools page """
     title = 'outils'
-    head_title = "Mes Outils"
-    head_text = "languages | framework | sgbd"
+    tools = Tools.objects.all()
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text
+        'tools': tools
     }
     return render(request, 'webapp/tools.html', context)
 
@@ -65,8 +64,6 @@ def credits(request):
     }
     return render(request, 'webapp/credits.html', context)
 
-
-
 def contact_mail(request):
     title = 'contact'
     head_title = "Conteact me"
@@ -98,11 +95,8 @@ def contact_mail(request):
                 fail_silently=False,
             )
 
+            message = "Votre message à bien été envoyé !"   
             
-            message = "Votre message à bien été envoyé !"
-            
-            
-        
     context = {
         'title': title,
         'head_title': head_title,
