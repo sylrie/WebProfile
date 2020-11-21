@@ -7,9 +7,9 @@
 body {
   font-family: 'Lora';
   background-image: linear-gradient(rgba(21, 15, 47, 0.75), rgba(21, 15, 47, 0.75)), url("../img/bg.jpg");
-  background-attachment: fixed;
+  background-attachment:  fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 h1,
