@@ -2,18 +2,18 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
-from .models import Tools
+from .models import Tools, Steps
 from .forms import ContactForm
 
 def index(request):
     """ Home page """
     title = "accueil"
-    head_title = "Sylvain Rieutor"
-    head_text = "Développeur d'application Python | Django"
+
+    steps = Steps.objects.all()
+
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text
+        'steps': steps
     }
     return render(request, 'webapp/home.html', context)
 

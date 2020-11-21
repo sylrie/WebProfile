@@ -3,7 +3,10 @@
 {% block content %}
 <!-- Contact-->
 
-
+<h1 class="site-heading text-center text-white ">
+    <span class="site-heading-upper text-primary mb-3">Contact</span>
+    <span class="site-heading-lower">Sylvain Rieutor</span>
+</h1>
 <section class="page-section" id="contact">
     <div class="container cta">
         <div class="cta-inner">
@@ -25,42 +28,50 @@
                 </form>
             </div>
             {% else %}
-            <h1 class="site-heading text-center mt-0">
-                <span class="site-heading-upper text-primary mb-3">contact</span>
-                <span class="site-heading-lower">envoyez moi un message</span>
-            </h1>
-            <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
-                {% csrf_token %}
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
-                                required="required"/>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
-                                required="required"/>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea">
-                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
-                                required="required"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
+            <div class='row'>
+                <div class= "col-lg-6">
+                    <span>Adresse:</span><br>
+                    <span>Téléphone:</span><br>
+                    <span>Email:</span><br>
                 </div>
-                <div class="text-center">
-                    <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
+                <div class= "col-lg-6">
+                    <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
+                        {% csrf_token %}
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-12 text-center mb-2">
+                                <span class="text-center">Envoyez moi un message</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
+                                        required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                                        required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group form-group-textarea">
+                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
+                                        required="required"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
+                        </div>
+                        
+                    </form>
                 </div>
-                
-            </form>
+            </div>
             {% endif %}
         </div>
     </div>

@@ -48,7 +48,7 @@ p {
   font-size: 2rem;
   font-weight: 300;
   line-height: 2rem;
-  text-shadow: 1px 1px 1px #e45643b9;
+  text-shadow: 1px 1px 1px #e456438f;
 
 }
 
@@ -70,6 +70,11 @@ p {
 .section-heading .section-heading-lower {
   display: block;
   font-size: 2.5rem;
+  font-weight: 100;
+}
+.section-heading .section-lower {
+  display: block;
+  font-size: 1.8rem;
   font-weight: 100;
 }
 
@@ -175,12 +180,13 @@ a.link {
 
 .img-zoom:hover {
   transform: scale(1.2);
-  
+  filter: saturate(2); 
+      -webkit-filter: saturate(2);
 }
 .img-zoom {
   transition: 0.4s;
-  filter: saturate(2); 
-      -webkit-filter: saturate(2);
+  filter: saturate(0); 
+      -webkit-filter: saturate(0);
 }
 
 .modal-header {
@@ -188,6 +194,14 @@ a.link {
   font-size: 2rem;
   border-color: #e45643;
 }
+
+.close {
+  color: white;
+}
+.close:hover {
+  color: #e45643;
+}
+
 .modal-footer {
   border-color: #e45643;
 }

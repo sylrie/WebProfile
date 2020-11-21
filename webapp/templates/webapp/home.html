@@ -15,12 +15,11 @@
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Mes Services</span>
-            <span class="section-heading-lower">Tous projet</span>
           </h2>
           <p class="mb-3">
-            Envie d'une solution digitale, 
-            Quelle que soit la taille de votre entreprise ou de votre projet, 
-            je vous accompagne dans l'analyse des besoins et vous propose une solution adaptée.
+            Face à la diversité et à la complexité du secteur développement, 
+            je vous accompagne dans l'étude et l'analyse de votre projet 
+            ainsi que dans la mise en œuvre de solutions adaptées.
 
           </p>
           <div class="intro-button mx-auto">
@@ -29,23 +28,36 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <section class="page-section cta">
-    <div class="container" id="infos">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Our Promise</span>
-              <span class="section-heading-lower"><em>clean code</em></span>
-            </h2>
-            <p class="mb-0">
-              When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!
-            </p>
+<section class="page-section cta">
+  <div class="container" id="infos">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Accompagnement</span>
+            <span class="section-lower"><em>Les étapes</em></span>
+          </h2>
+          <div class="row text-center">
+            {% for step in steps %}
+            <div class="col-md-4 my-3">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas {{ step.logo }} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="">{{ step.name }}</h4>
+                <p class="">{{ step.infos }}</p>
+            </div>
+            {% endfor %}
+            <div class="intro-button mx-auto">
+              <a class="btn btn-primary btn-xl" href="{% url 'contact_mail' %}">Contactez-moi</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>   
+  </div>
+</section>
+
 {% endblock %}
