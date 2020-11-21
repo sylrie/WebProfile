@@ -7,7 +7,7 @@ from .forms import ContactForm
 
 def index(request):
     """ Home page """
-    title = "accueil"
+    title = "Accueil"
 
     steps = Steps.objects.all()
 
@@ -19,7 +19,7 @@ def index(request):
 
 def tools(request):
     """ tools page """
-    title = 'outils'
+    title = 'Outils'
     tools = Tools.objects.all()
     context = {
         'title': title,
@@ -29,45 +29,31 @@ def tools(request):
 
 def portfolio(request):
     """ portfolio page """
-    title = 'portfolio'
-    head_title = "Tools"
-    head_text = "web application developper"
+    title = 'Portfolio'
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text
     }
    
     return render(request, 'webapp/portfolio.html', context)
 
 def about(request):
     """ about page """
-    title = 'à propos'
-    head_title = "sylvain rieutor"
-    head_text = "Développeur Django"
+    title = 'À propos'
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text
     }
     return render(request, 'webapp/about.html', context)
 
 def credits(request):
     """ credits page """
-    title = 'crédits'
-    head_title = "sylvain rieutor"
-    head_text = "Développeur Django"
+    title = 'Crédits'
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text
     }
     return render(request, 'webapp/credits.html', context)
 
 def contact_mail(request):
-    title = 'contact'
-    head_title = "Conteact me"
-    head_text = "Feel free to send me a message"
+    title = 'Contact'
     message = None
     
     if request.method == 'POST':
@@ -99,8 +85,6 @@ def contact_mail(request):
             
     context = {
         'title': title,
-        'head_title': head_title,
-        'head_text': head_text,
         'message': message
     }
     return render(request, 'webapp/contact.html', context)

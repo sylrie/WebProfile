@@ -44,14 +44,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            {% if title == 'accueil' %}
+            {% if title == 'Accueil' %}
             <li class="nav-item active px-lg-4">
             {% else %}
             <li class="nav-item px-lg-4">
             {% endif %}
               <a class="nav-link text-uppercase text-expanded" href="{% url 'index' %}">accueil</a>
             </li>
-            {% if title == 'à propos' %}
+            {% if title == 'À propos' %}
             <li class="nav-item active px-lg-4">
             {% else %}
             <li class="nav-item px-lg-4">
@@ -59,7 +59,7 @@
               <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">à propos</a>
             </li>
 
-            {% if title == 'portfolio' %}
+            {% if title == 'Portfolio' %}
             <li class="nav-item active px-lg-4">
             {% else %}
             <li class="nav-item px-lg-4">
@@ -73,7 +73,7 @@
             {% endif %}
               <a class="nav-link text-uppercase text-expanded" href="{% url 'tools' %}">outils</a>
             </li>
-            {% if title == 'contact' %}
+            {% if title == 'Contact' %}
             <li class="nav-item active px-lg-4">
             {% else %}
             <li class="nav-item px-lg-4">
