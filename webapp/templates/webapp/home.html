@@ -14,14 +14,15 @@
         <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'webapp/img/intro.jpg' %}" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Mes Services</span>
+            <span class="section-heading-upper">Les solutions</span>
           </h2>
           <p class="mb-3">
             Face à la diversité et à la complexité du secteur développement, 
+            il peut être difficile de savoir vers qui se tourner.
+            Quel que soit votre besoin, 
             je vous accompagne dans l'étude et l'analyse de votre projet 
             ainsi que dans la mise en œuvre de solutions adaptées.
-
-          </p>
+          </p>         
           <div class="intro-button mx-auto">
             <a class="btn btn-primary btn-xl" href="#infos">En Savoir Plus</a>
           </div>
@@ -47,10 +48,10 @@
                     <i class="fas {{ step.logo }} fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="">{{ step.name }}</h4>
-                <p class="">{{ step.infos }}</p>
+                <p class="d-none d-sm-block ">{{ step.infos }}</p>
             </div>
             {% endfor %}
-            <div class="intro-button mx-auto">
+            <div class="intro-button mx-auto pt-4">
               <a class="btn btn-primary btn-xl" href="{% url 'contact_mail' %}">Contactez-moi</a>
             </div>
           </div>
