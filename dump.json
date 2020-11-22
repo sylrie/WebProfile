@@ -1,0 +1,1803 @@
+[
+{
+  "model": "webapp.tools",
+  "pk": "Bootstrap",
+  "fields": {
+    "acronym": null,
+    "details": "Collection d'outils utiles à la création du design (graphisme, animation et interactions avec la page dans le navigateur, etc.) de sites et d'applications web. C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus populaires sur la plate-forme de gestion de développement GitHub",
+    "logo": "bootstrap.svg",
+    "order": 4
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "CSS3",
+  "fields": {
+    "acronym": "Cascading Style Sheets",
+    "details": "Langage informatique qui décrit la présentation des documents HTML et XML. Couramment utilisé dans la conception de sites web",
+    "logo": "css3.svg",
+    "order": 2
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "Django",
+  "fields": {
+    "acronym": null,
+    "details": "Cadre de développement web open source en Python. Il a pour but de rendre le développement web 2.0 simple et rapide. Pour cette raison, le projet a pour slogan ½ Le framework pour les perfectionnistes avec des deadlines. ╗",
+    "logo": "django.svg",
+    "order": 6
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "Flask",
+  "fields": {
+    "acronym": null,
+    "details": "Micro framework open-source de développement web en Python. Il a pour objectif de garder un noyau simple mais extensible. Il n'intègre pas de système d'authentification, pas de couche d'abstraction de base de données, ni d'outil de validation de formulaires. Cependant, de nombreuses extensions permettent d'ajouter facilement des fonctionnalités",
+    "logo": "flask.svg",
+    "order": 6
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "Git",
+  "fields": {
+    "acronym": null,
+    "details": "Le plus populaire logiciel de gestion de versions décentralisé.\r\nUtilisé par plus de douze millions de personnes.",
+    "logo": "git.svg",
+    "order": 9
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "GitHub",
+  "fields": {
+    "acronym": null,
+    "details": "Service web d'hébergement et de gestion de développement de logiciels, utilisant le logiciel de gestion de versions Git.",
+    "logo": "github.svg",
+    "order": 10
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "Heroku",
+  "fields": {
+    "acronym": null,
+    "details": "Logiciel qui supporte les bases de données relationnelles et NoSQL. Il possède une architecture modulaire qui permet de supporter plusieurs environnements d'exécution grâce à la virtualisation logicielle par des containers nommés dynos.",
+    "logo": "heroku.svg",
+    "order": 11
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "HTML5",
+  "fields": {
+    "acronym": "HyperText Markup Language 5",
+    "details": "Dernière révision majeure du  langage HTML (format de données conèu pour représenter les pages web)",
+    "logo": "html5.svg",
+    "order": 1
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "JavaScript",
+  "fields": {
+    "acronym": "JS",
+    "details": "Langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies c£ur du World Wide Web",
+    "logo": "javascript.svg",
+    "order": 3
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "MySql",
+  "fields": {
+    "acronym": null,
+    "details": "Système de gestion de bases de données relationnelles (SGBDR). Il est distribué sous une double licence GPL et propriétaire. Il fait partie des logiciels de gestion de base de données les plus utilisés au monde, autant par le grand public (applications web principalement) que par des professionnels",
+    "logo": "mysql.svg",
+    "order": 7
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "PostgreSQL",
+  "fields": {
+    "acronym": null,
+    "details": "Système de gestion de base de données relationnelle et objet (SGBDRO).\r\nCe système multi-plateforme est largement connu et réputé à travers le monde, notamment pour son comportement stable et pour Ûtre très respectueux des normes ANSI SQL.\r\nIl n'est pas contr¶lé par une seule entreprise, mais est fondé sur une communauté mondiale de développeurs et d'entreprises.",
+    "logo": "postgresql.svg",
+    "order": 8
+  }
+},
+{
+  "model": "webapp.tools",
+  "pk": "Python",
+  "fields": {
+    "acronym": null,
+    "details": "Langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.",
+    "logo": "python.svg",
+    "order": 5
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "Analyse",
+  "fields": {
+    "infos": "╔change sur votre activité, votre environnement et vos idées afin d'analyser les besoins et objectifs.",
+    "logo": "fa-tasks",
+    "order": 1
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "Déploiement",
+  "fields": {
+    "infos": "Définition des composants nécessaires, choix de l'hébergeur, configuration et déploiement.",
+    "logo": "fa-globe",
+    "order": 6
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "Développement",
+  "fields": {
+    "infos": "Développement de la structure, des fonctionnalités et intégration de la partie graphique.",
+    "logo": "fa-code",
+    "order": 3
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "Référencement",
+  "fields": {
+    "infos": "Référencement naturel, ou SEO,  en appliquant une série de ½ règles ╗ édictées par les moteurs de recherche.",
+    "logo": "fa-hand-point-right",
+    "order": 7
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "Test",
+  "fields": {
+    "infos": "╔criture des tests afin de vérifier l'absence de bug au lancement et durant les phases évolutives.",
+    "logo": "fa-bug",
+    "order": 5
+  }
+},
+{
+  "model": "webapp.steps",
+  "pk": "UX / UI Design",
+  "fields": {
+    "infos": "Définition de l'identité visuelle à utiliser pour le webdesign de votre site et des prototypes des pages.",
+    "logo": "fa-eye",
+    "order": 2
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$qoPlFODtyhup$5nSyYfBD7jdaNRmEZnrs/LENLElZIcI7d4j9A7DU0jg=",
+    "last_login": "2020-11-20T15:28:48.552Z",
+    "is_superuser": true,
+    "username": "sylvain",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-11-18T11:08:00.306Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2t1gnaddd52z5yp4jdqcyt46jl6h74e3",
+  "fields": {
+    "session_data": ".eJxVjM0OwiAQhN-FsyEsXfnx6N1nIEtZpGogKe3J-O62SQ96nPm-mbcItC4lrJ3nMCVxESBOv12k8cl1B-lB9d7k2OoyT1Huijxol7eW-HU93L-DQr1sa0-gMacREhofnQHjM3vtsrfIW9IIpAY06KzSipQ9A0I0OAAyuAzi8wW5vjYj:1kg8LA:GGCoVFaSfUMotwn5VkHMHffd28s44AxJ5Cw1hdh3upw",
+    "expire_date": "2020-12-04T15:28:48.556Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2020-11-20T15:29:33.451Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML 5",
+    "object_repr": "HTML 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2020-11-20T15:36:23.162Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML 5",
+    "object_repr": "HTML 5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2020-11-20T15:58:06.825Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML 5",
+    "object_repr": "HTML 5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2020-11-20T16:04:42.322Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML 5",
+    "object_repr": "HTML 5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2020-11-20T16:05:03.323Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS 3",
+    "object_repr": "CSS 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2020-11-20T16:06:34.976Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "JavaScript",
+    "object_repr": "JavaScript",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2020-11-20T16:16:04.588Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Bootstrap",
+    "object_repr": "Bootstrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2020-11-20T16:16:31.179Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2020-11-20T16:16:43.259Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Django",
+    "object_repr": "Django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2020-11-20T16:20:21.514Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS 3",
+    "object_repr": "CSS 3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2020-11-20T16:20:25.953Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "JavaScript",
+    "object_repr": "JavaScript",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2020-11-20T16:20:35.906Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Bootstrap",
+    "object_repr": "Bootstrap",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2020-11-20T16:20:41.346Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2020-11-20T16:20:48.794Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Django",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2020-11-20T16:21:25.194Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Bootstrap",
+    "object_repr": "Bootstrap",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2020-11-20T16:48:03.297Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2020-11-20T16:50:07.861Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2020-11-20T16:55:58.072Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2020-11-20T17:20:46.977Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "MySql",
+    "object_repr": "MySql",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2020-11-20T17:20:53.886Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "MySql",
+    "object_repr": "MySql",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2020-11-20T17:21:16.816Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "PostgreSQL",
+    "object_repr": "PostgreSQL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2020-11-20T17:21:30.391Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "PostgreSQL",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2020-11-21T12:42:17.473Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML_5",
+    "object_repr": "HTML_5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2020-11-21T12:42:37.529Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML 5",
+    "object_repr": "HTML 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2020-11-21T12:42:42.405Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS_3",
+    "object_repr": "CSS_3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2020-11-21T12:42:48.105Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS 3",
+    "object_repr": "CSS 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2020-11-21T12:56:45.847Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "PostgreSQL",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2020-11-21T12:57:04.711Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Django",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2020-11-21T12:57:29.136Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Flask",
+    "object_repr": "Flask",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2020-11-21T12:57:46.353Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "PostgreSQL",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2020-11-21T12:58:03.808Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Git",
+    "object_repr": "Git",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2020-11-21T12:58:16.408Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "GitHub",
+    "object_repr": "GitHub",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2020-11-21T12:58:35.777Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Heroku",
+    "object_repr": "Heroku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2020-11-21T15:08:29.669Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2020-11-21T15:09:00.870Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "UX / UI Design",
+    "object_repr": "UX / UI Design",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2020-11-21T15:09:08.647Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2020-11-21T15:09:29.271Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2020-11-21T15:09:34.630Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2020-11-21T15:09:49.854Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Déploiement",
+    "object_repr": "Déploiement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2020-11-21T15:10:20.850Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Référencement",
+    "object_repr": "Référencement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2020-11-21T16:40:43.507Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2020-11-21T16:43:47.971Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2020-11-21T16:44:56.595Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "UX / UI Design",
+    "object_repr": "UX / UI Design",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2020-11-21T16:50:29.153Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Référencement",
+    "object_repr": "Référencement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2020-11-21T16:51:19.155Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Déploiement",
+    "object_repr": "Déploiement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2020-11-21T16:52:30.212Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2020-11-21T16:53:15.619Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2020-11-21T17:01:06.900Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2020-11-21T17:01:14.811Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2020-11-21T17:01:18.821Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "UX / UI Design",
+    "object_repr": "UX / UI Design",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2020-11-21T17:01:24.651Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2020-11-21T17:01:28.643Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2020-11-21T17:01:31.738Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Déploiement",
+    "object_repr": "Déploiement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2020-11-21T17:01:35.514Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Référencement",
+    "object_repr": "Référencement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2020-11-22T14:54:14.435Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML5",
+    "object_repr": "HTML5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2020-11-22T14:54:31.633Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS3",
+    "object_repr": "CSS3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2020-11-22T14:54:37.487Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS3",
+    "object_repr": "CSS3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2020-11-22T15:12:40.125Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML_5",
+    "object_repr": "HTML_5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2020-11-22T15:12:40.127Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS_3",
+    "object_repr": "CSS_3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2020-11-22T15:13:42.404Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "HTML5",
+    "object_repr": "HTML5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Acronym\", \"Details\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2020-11-22T15:16:41.163Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "CSS3",
+    "object_repr": "CSS3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Acronym\", \"Details\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2020-11-22T15:17:26.329Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "JavaScript",
+    "object_repr": "JavaScript",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Acronym\", \"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2020-11-22T15:18:40.939Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Bootstrap",
+    "object_repr": "Bootstrap",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2020-11-22T15:19:15.442Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Python",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2020-11-22T15:20:14.867Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Flask",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2020-11-22T15:21:54.626Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Django",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2020-11-22T15:22:36.027Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "MySql",
+    "object_repr": "MySql",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2020-11-22T15:22:42.834Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "MySql",
+    "object_repr": "MySql",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2020-11-22T15:24:38.266Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "PostgreSQL",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2020-11-22T15:25:55.145Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Git",
+    "object_repr": "Git",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2020-11-22T15:26:42.466Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "GitHub",
+    "object_repr": "GitHub",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2020-11-22T15:27:28.379Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "tools"
+    ],
+    "object_id": "Heroku",
+    "object_repr": "Heroku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Details\", \"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2020-11-22T15:40:05.044Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "UX / UI Design",
+    "object_repr": "UX / UI Design",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2020-11-22T15:45:04.613Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2020-11-22T15:45:54.236Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2020-11-22T15:47:52.036Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2020-11-22T15:48:50.292Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2020-11-22T15:53:17.757Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Déploiement",
+    "object_repr": "Déploiement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2020-11-22T15:55:28.229Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Référencement",
+    "object_repr": "Référencement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2020-11-22T15:55:53.463Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Référencement",
+    "object_repr": "Référencement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2020-11-22T16:01:08.174Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Déploiement",
+    "object_repr": "Déploiement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2020-11-22T16:03:56.654Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2020-11-22T16:04:28.350Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2020-11-22T16:05:25.559Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2020-11-22T16:05:46.055Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2020-11-22T16:06:09.872Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Analyse",
+    "object_repr": "Analyse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2020-11-22T16:06:12.805Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "UX / UI Design",
+    "object_repr": "UX / UI Design",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2020-11-22T16:06:15.105Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Développement",
+    "object_repr": "Développement",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2020-11-22T16:06:22.476Z",
+    "user": [
+      "sylvain"
+    ],
+    "content_type": [
+      "webapp",
+      "steps"
+    ],
+    "object_id": "Test",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Infos\"]}}]"
+  }
+}
+]
