@@ -33,16 +33,16 @@ else:
 
 ALLOWED_HOSTS = ['127.0.0.1', 'sr-developpeur.herokuapp.com']
 
-if os.environ.get('ENV') == 'PRODUCTION':
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-    DEFAULT_FROM_EMAIL = '<noreply@webprofile.com>'
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#if os.environ.get('ENV') == 'PRODUCTION':
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = '<noreply@webprofile.com>'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+#else:
+#    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Application definition
@@ -150,21 +150,21 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Heroku
-if os.environ.get('ENV') == 'PRODUCTION':
+#if os.environ.get('ENV') == 'PRODUCTION':
 
-    # Static files (CSS, JavaScript, Images)
-    # https://docs.djangoproject.com/en/1.9/howto/static-files/
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-    # Extra places for collectstatic to find static files.
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
-    #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-    db_from_env = dj_database_url.config(conn_max_age=500)
-    DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
