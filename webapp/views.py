@@ -89,6 +89,6 @@ def contact_mail(request):
         'title': title,
         'message': message
     }
-    return render(request, 'webapp/contact.html', context)
+    return render(request, 'webapp/contact copy.html', context)
     #return HttpResponse(f"Email sent to {res} members")
     #return HttpResponse("Email sent to "+ res +" members")

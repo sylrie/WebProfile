@@ -36,6 +36,8 @@ $('a[href*="#"]')
     }
   });
 
+
+  // Scroll to top button
   $('<div></div>')
 		.attr('id','scrolltotop')
 		.hide()

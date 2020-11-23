@@ -1,0 +1,102 @@
+{% extends 'webapp/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Contact-->
+
+<h1 class="site-heading text-center text-white">
+    <span class="site-heading-upper text-primary mb-3">Contact</span>
+    <span class="site-heading-lower">Sylvain Rieutor</span>
+</h1>
+<section class="page-section" id="contact">
+    <div class="container cta">
+        <div class="cta-inner px-4">
+            <div class="row mt-lg-6 justify-content-center">
+                <div class="col-lg-5 mx-lg-0 mx-2 ">
+                    <div>
+                        <div class="text-center">
+                            <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'webapp/img/about.png' %}"
+                            alt="profile image" style="max-height: 14rem;">
+                        </div>
+                        <div id="row contact-me">
+                            <h2 class="text-center">
+                                <span class="site-heading-lower">Contactez-moi</span>
+                            </h2>
+                            <div class="row social justify-content-around my-3">
+                                <a class="text-muted" href="https://github.com/sylrie" target="_blank">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                                <a class="text-muted" href="https://www.linkedin.com/in/sylvain-rieutor-7a558a157/" target="_blank">
+                                    <i class="fab fa-linkedin-in fa-lg"></i>
+                                </a>
+                                <a class="text-muted" href="https://twitter.com/sylvain_rieutor" target="_blank">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </a>
+                            </div>
+                            <p class="mb-2 text-muted">
+                                <a class="link text-muted" href="tel:06-26-87-64-81">
+                                    <i class="fas fa-phone"></i>
+                                    06-26-87-64-81
+                                </a>
+                            </p>
+                            <p class="mb-2 text-muted">
+                                <a class="link text-muted" href="mailto:{{info.email}}">
+                                    <i class="fa fa-envelope"></i>
+                                    sylvain.rieutor.dev@gmail.com
+                                </a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 pl-lg-4 mt-lg-0 mt-3" id="message-me">
+                    <h4>Une idée ? une question? <strong>Parlons en !</strong></h4>
+            
+                    <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
+                        {% csrf_token %}
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
+                                        required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                                        required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group form-group-textarea">
+                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
+                                        required="required"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
+                        </div>
+                    </form>
+            
+                    <!-- Small modal -->
+                    <button style="display:none;" type="button" id="modal-toggle" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+            
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content text-success p-3 text-center">
+                            <i class="fa fa-check-circle fa-3x"></i>
+                            <span class="display-4">Your message has sent successfully.</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
