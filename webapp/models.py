@@ -71,3 +71,18 @@ class Service(models.Model):
 
     def __str__(self):
         return self.name
+
+class Project(models.Model):
+    """ Projects infos """
+    name = models.CharField(max_length=200, blank=False, null=False)
+    details = models.TextField(blank=True, null=True)
+    img = models.CharField(max_length=200, blank=True, null=True)
+    online = models.CharField(max_length=200, blank=False, null=False)
+    github = models.CharField(max_length=200, blank=False, null=False)
+    order = models.IntegerField()
+
+    class Meta:
+        ordering = ['-order']
+
+    def __str__(self):
+        return self.name

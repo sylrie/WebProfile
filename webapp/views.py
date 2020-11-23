@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
-from .models import Tools, Steps, Social, Contact, Service
+from .models import Tools, Steps, Social, Contact, Service, Project
 from .forms import ContactForm
 
 def index(request):
@@ -42,8 +42,10 @@ def services(request):
 def about(request):
     """ about page """
     title = 'À propos'
+    projects = Project.objects.all()
     context = {
         'title': title,
+        'projects': projects
     }
     return render(request, 'webapp/about.html', context)
 
