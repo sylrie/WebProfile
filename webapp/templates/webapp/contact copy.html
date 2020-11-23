@@ -11,7 +11,7 @@
     <div class="container cta">
         <div class="cta-inner px-4">
             <div class="row mt-lg-6 justify-content-center">
-                <div class="col-lg-5 mx-lg-0 mx-2 ">
+                <div class="col-lg-5 mx-lg-0">
                     <div>
                         <div class="text-center">
                             <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'webapp/img/about.png' %}"
@@ -50,7 +50,6 @@
                 </div>
                 <div class="col-lg-7 pl-lg-4 mt-lg-0 mt-3" id="message-me">
                     <h4>Une idée ? une question? <strong>Parlons en !</strong></h4>
-            
                     <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
                         {% csrf_token %}
                         <div class="row align-items-stretch mb-5">
@@ -82,18 +81,6 @@
                             <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
                         </div>
                     </form>
-            
-                    <!-- Small modal -->
-                    <button style="display:none;" type="button" id="modal-toggle" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-            
-                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content text-success p-3 text-center">
-                            <i class="fa fa-check-circle fa-3x"></i>
-                            <span class="display-4">Your message has sent successfully.</span>
-                        </div>
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>
