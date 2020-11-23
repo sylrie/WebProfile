@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   -webkit-background-size: 1920px 1280px;
+  -webkit-background-attachement: fixed;
   -webkit-overflow-scrolling: touch;
 }
 
