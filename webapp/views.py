@@ -93,6 +93,6 @@ def contact_mail(request):
         'socials': socials,
         'contacts': contacts
     }
-    return render(request, 'webapp/contact copy.html', context)
+    return render(request, 'webapp/contact.html', context)
     #return HttpResponse(f"Email sent to {res} members")
     #return HttpResponse("Email sent to "+ res +" members")
