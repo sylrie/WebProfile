@@ -30,6 +30,8 @@ def tools(request):
 def portfolio(request):
     """ portfolio page """
     title = 'Portfolio'
+
+    
     context = {
         'title': title,
     }
