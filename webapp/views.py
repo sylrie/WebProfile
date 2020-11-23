@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
-from .models import Tools, Steps, Social, Contact
+from .models import Tools, Steps, Social, Contact, Service
 from .forms import ContactForm
 
 def index(request):
@@ -30,10 +30,11 @@ def tools(request):
 def portfolio(request):
     """ portfolio page """
     title = 'Portfolio'
-
+    services = Service.objects.all()
     
     context = {
         'title': title,
+        'services': services
     }
    
     return render(request, 'webapp/portfolio.html', context)
@@ -96,3 +97,4 @@ def contact_mail(request):
     return render(request, 'webapp/contact.html', context)
     #return HttpResponse(f"Email sent to {res} members")
     #return HttpResponse("Email sent to "+ res +" members")
+

@@ -57,3 +57,17 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Service(models.Model):
+    """ Services """
+    title = models.CharField(max_length=100, primary_key=True, unique=True)
+    name = models.CharField(max_length=200, blank=False, null=False)
+    details = models.TextField(blank=True, null=True)
+    img = models.CharField(max_length=200, blank=True, null=True)
+    order = models.IntegerField()
+
+    class Meta:
+        ordering = ['order']
+
+    def __str__(self):
+        return self.name
