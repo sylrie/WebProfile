@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
-from .models import Tools, Steps
+from .models import Tools, Steps, Social, Contact
 from .forms import ContactForm
 
 def index(request):
@@ -84,10 +84,14 @@ def contact_mail(request):
             )
 
             message = "Votre message à bien été envoyé !"   
-            
+
+    socials = Social.objects.all()
+    contacts = Contact.objects.all()      
     context = {
         'title': title,
-        'message': message
+        'message': message,
+        'socials': socials,
+        'contacts': contacts
     }
     return render(request, 'webapp/contact copy.html', context)
     #return HttpResponse(f"Email sent to {res} members")

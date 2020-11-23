@@ -22,29 +22,21 @@
                                 <span class="site-heading-lower">Contactez-moi</span>
                             </h2>
                             <div class="row social justify-content-center my-3">
-                                <a class="text-muted col-1 text-center" href="https://github.com/sylrie" target="_blank">
-                                    <i class="fab fa-github fa-lg"></i>
+                                {% for social in socials %}
+                                <a class="text-muted col-1 text-center" href="{{ social.link }}" target="_blank" title="{{ social.name }}">
+                                    <i class="fab {{ social.logo }} fa-lg"></i>
                                 </a>
-                                <a class="text-muted col-1 text-center" href="https://www.linkedin.com/in/sylvain-rieutor-7a558a157/" target="_blank">
-                                    <i class="fab fa-linkedin-in fa-lg"></i>
-                                </a>
-                                <a class="text-muted col-1 text-center" href="https://twitter.com/sylvain_rieutor" target="_blank">
-                                    <i class="fab fa-twitter fa-lg"></i>
-                                </a>
+                                
+                                {% endfor %}
                             </div>
+                            {% for contact in contacts %}
                             <p class="mb-2 text-muted text-center">
-                                <a class="link text-muted" href="tel:06-26-87-64-81">
-                                    <i class="fas fa-phone"></i>
-                                    06-26-87-64-81
+                                <a class="link text-muted" href="{{ contact.link }}">
+                                    <i class="fas {{ contact.logo }} fa-lg"></i>
+                                    {{ contact.value }}
                                 </a>
                             </p>
-                            <p class="mb-2 text-muted text-center">
-                                <a class="link text-muted" href="mailto:{{info.email}}">
-                                    <i class="fa fa-envelope"></i>
-                                    sylvain.rieutor.dev@gmail.com
-                                </a>
-                            </p>
-                            
+                            {% endfor %}   
                         </div>
                     </div>
                 </div>
