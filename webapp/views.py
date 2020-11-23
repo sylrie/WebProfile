@@ -27,9 +27,9 @@ def tools(request):
     }
     return render(request, 'webapp/tools.html', context)
 
-def portfolio(request):
-    """ portfolio page """
-    title = 'Portfolio'
+def services(request):
+    """ services page """
+    title = 'services'
     services = Service.objects.all()
     
     context = {
@@ -37,7 +37,7 @@ def portfolio(request):
         'services': services
     }
    
-    return render(request, 'webapp/portfolio.html', context)
+    return render(request, 'webapp/services.html', context)
 
 def about(request):
     """ about page """

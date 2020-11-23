@@ -70,12 +70,12 @@
               <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">à propos</a>
             </li>
 
-            {% if title == 'Portfolio' %}
+            {% if title == 'services' %}
             <li class="nav-item active px-lg-4">
             {% else %}
             <li class="nav-item px-lg-4">
             {% endif %}
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'portfolio' %}">portfolio</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">services</a>
             </li>
 
             {% if title == 'Outils' %}
