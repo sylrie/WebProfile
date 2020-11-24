@@ -9,7 +9,7 @@
 </h1>
 
 <section class="page-section cta">
-    <div class="container">
+    <div class="container tools">
       <div class="row">
         <div class="col-xl-11 mx-auto">
           <div class="cta-inner text-center rounded">
@@ -17,7 +17,6 @@
               <span class="section-heading-upper">FrontEnd | BackEnd | SGBD</span>
               <span class="section-lower">Technologies</span>
             </h2>
-          
             <div class="row justify-content-center">
               {% for tool in tools %}
               {% with 'webapp/img/tools/'|add:tool.logo as logo %}
@@ -39,6 +38,7 @@
 
   <!-- Modals -->
   {% for tool in tools %}
+  {% with 'webapp/img/tools/'|add:tool.logo as logo %}
   <div class="modal fade" id="{{ tool.name }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -48,15 +48,21 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+        <div class="text-center pt-2">
+          <img class="img-sat" src="{% static logo %}" style="width:30%" alt="{{ project.name }}">
+        </div>
         <div class="modal-body">
           {% if tool.acronym %}
           <em>{{ tool.acronym }}</em><br>
           {% endif %}
           {{ tool.details }}
         </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
       </div>
     </div>
   </div>
+  {% endwith %}
   {% endfor %}
-
   {% endblock %}

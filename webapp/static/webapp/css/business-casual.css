@@ -10,7 +10,18 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  -webkit-background-size: 1920px 1280px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+body.modal-open .page-section{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 h1,
@@ -182,12 +193,16 @@ a.link {
 .img-zoom:hover {
   transform: scale(1.2);
   filter: saturate(2); 
-      -webkit-filter: saturate(2);
+  -webkit-filter: saturate(2);
 }
 .img-zoom {
   transition: 0.4s;
   filter: saturate(0); 
-      -webkit-filter: saturate(0);
+  -webkit-filter: saturate(0);
+}
+.img-sat {
+  filter: saturate(3); 
+  -webkit-filter: saturate(3);
 }
 
 .modal-header {
@@ -208,7 +223,7 @@ a.link {
 }
 
 .modal-content {
-  background-color:rgba(21, 15, 47, 0.9);
+  background-color:rgba(21, 15, 47, 0.6);
   color: white;
 }
 .cta .cta-inner:before {
