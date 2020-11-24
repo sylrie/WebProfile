@@ -10,10 +10,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
+  -webkit-background-size: 1920px 1280px;
+
 }
 
 body.modal-open .page-section{
@@ -126,12 +124,20 @@ p {
 
 a.link {
   color: #e45643;
+  transition: 0.2s;
 }
 .link:hover {
   color: rgba(252, 4, 4, 0.732);
   text-decoration: none;
+  transform: scale(1.2);
 }
-
+a {
+  color: #e45643;
+  transition: 0.2s;
+}
+li::marker {
+  color: #e45643;
+}
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;
@@ -200,6 +206,7 @@ a.link {
   filter: saturate(0); 
   -webkit-filter: saturate(0);
 }
+
 .img-sat {
   filter: saturate(3); 
   -webkit-filter: saturate(3);
@@ -361,7 +368,9 @@ a.link {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:  #e4564373;
+  color:rgba(252, 4, 4, 1);
+  text-decoration: none;
 }
 
 /* Caption text */
@@ -371,10 +380,10 @@ a.link {
   font-weight: bolder;
   padding: 8px 12px;
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   right: -20px;
   width: 85%;
-  max-height: 80px;
+  max-height: 100px;
   overflow: auto;
   text-align: center;
   background-color:  rgba(255, 255, 255, 0.7);
@@ -401,7 +410,6 @@ a.link {
   top: 7px;
   right: 7px;
   background-color: rgba(255, 255, 255, 0.3);
-  
 }
 
 /* The dots/bullets/indicators */

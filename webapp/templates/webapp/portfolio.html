@@ -12,12 +12,12 @@
             <div class="titletext rounded">{{ project.name }}</div>
             <div class="linktext rounded">
                 {% if project.online %}
-                <a class="text-primary mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
+                <a class="link mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
                     <i class="fas fa-globe"></i>
                 </a>
                 {% endif %}
                 {% if project.github %}
-                <a class="text-primary" href="{{ project.github }}" target="_blank" title=" Code Source">
+                <a class="link" href="{{ project.github }}" target="_blank" title=" Code Source">
                     <i class="fas fa-code"></i>
                 </a>
                 {% endif %}
@@ -65,12 +65,12 @@
                     <p>{{ project.details }}</p>
                     <div class="row justify-content-between px-3">
                         {% if project.online %}
-                        <a class="text-primary mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
+                        <a class="link mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
                             <i class="fas fa-globe"></i> Live demo
                         </a>
                         {% endif %}
                         {% if project.github %}
-                        <a class="link text-primary" href="{{ project.github }}" target="_blank" title=" Code Source">
+                        <a class="link " href="{{ project.github }}" target="_blank" title=" Code Source">
                             <i class="fas fa-code"></i> Code source
                         </a>
                         {% endif %}
