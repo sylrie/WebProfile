@@ -23,8 +23,45 @@
                 {% endif %}
             </div>
 
-            <img class="rounded" src="{% static image %}" style="width:100%">
+            <img class="rounded" src="{% static image %}" style="width:100%" alt="{{ project.name }}"
+                data-toggle="modal" data-target="#{{ project.name }}">
             <div class="text rounded">{{ project.details }}</div>
+        </div>
+        {% endwith %}
+
+        {% with 'webapp/img/projects/'|add:project.img2 as image %}
+        <div class="modal fade" id="{{ project.name }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span>{{ project.name }}</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="text-center pt-2">
+                        <img class="rounded" src="{% static image %}" style="width:80%" alt="{{ project.name }}">
+                    </div>
+                    <div class="modal-body">
+                        <p>{{ project.details }}</p>
+                        <div class="row justify-content-between px-3">
+                            {% if project.online %}
+                            <a class="text-primary mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
+                                <i class="fas fa-globe"></i> Live demo
+                            </a>
+                            {% endif %}
+                            {% if project.github %}
+                            <a class="link text-primary" href="{{ project.github }}" target="_blank" title=" Code Source">
+                                <i class="fas fa-code"></i> Code source
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
         </div>
         {% endwith %}
         {% endfor %}
@@ -41,5 +78,4 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-
 </section>

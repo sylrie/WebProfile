@@ -300,7 +300,7 @@ a.link {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  width: 45%;
+  width: 35%;
   position: relative;
   margin: auto;
 }
@@ -408,17 +408,17 @@ a.link {
 /* Fading animation */
 .fade-show {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .2}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .2}
   to {opacity: 1}
 }
