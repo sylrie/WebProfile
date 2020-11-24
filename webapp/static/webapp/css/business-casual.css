@@ -328,7 +328,7 @@ li::marker {
 }
 @media (max-width: 992px) {
   .slideshow-container {
-    width: 70%;
+    width: 50%;
   }
 }
 @media (max-width: 512px) {
@@ -348,7 +348,7 @@ li::marker {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 0px;
   color: #e45643;
   font-weight: bold;
   font-size: 35px;
@@ -359,11 +359,11 @@ li::marker {
 
 /* Position the "next button" to the right */
 .next {
-  right: -45px;
+  right: -25px;
   border-radius: 3px 0 0 3px;
 }
 .prev {
-  left: -45px;
+  left: -25px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
