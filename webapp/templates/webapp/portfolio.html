@@ -7,29 +7,29 @@
     <div class="slideshow-container">
         
         {% for project in projects %}
-        {% with 'webapp/img/projects/'|add:project.img as image %}
-        <div class="mySlides fade-show">
-            <div class="titletext rounded">{{ project.name }}</div>
-            <div class="linktext rounded">
-                {% if project.online %}
-                <a class="link mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
-                    <i class="fas fa-globe"></i>
-                </a>
-                {% endif %}
-                {% if project.github %}
-                <a class="link" href="{{ project.github }}" target="_blank" title=" Code Source">
-                    <i class="fas fa-code"></i>
-                </a>
-                {% endif %}
+            {% with 'webapp/img/projects/'|add:project.img as image %}
+            <div class="mySlides fade-show">
+                <h3 class="titletext rounded">{{ project.name }}</h3>
+                <div class="linktext rounded">
+
+                    {% if project.online %}
+                    <a class="link mr-1" href="{{ project.online }}" target="_blank" title=" Live Démo">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if project.github %}
+                    <a class="link" href="{{ project.github }}" target="_blank" title=" Code Source">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    {% endif %}
+
+                </div>
+                <img class="rounded" src="{% static image %}" style="width:100%" alt="{{ project.name }}"
+                    data-toggle="modal" data-target="#{{ project.name }}">
+                <div class="text rounded">{{ project.details }}</div>
             </div>
-
-            <img class="rounded" src="{% static image %}" style="width:100%" alt="{{ project.name }}"
-                data-toggle="modal" data-target="#{{ project.name }}">
-            <div class="text rounded">{{ project.details }}</div>
-        </div>
-        {% endwith %}
-
-        
+            {% endwith %}
         {% endfor %}
   
         <!-- Next and previous buttons -->
@@ -53,7 +53,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span>{{ project.name }}</span>
+                    <h3>{{ project.name }}</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
