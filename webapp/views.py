@@ -5,9 +5,10 @@ from django.template.loader import render_to_string
 from .models import Tools, Steps, Social, Contact, Service, Project
 from .forms import ContactForm
 
+
 def index(request):
     """ Home page """
-    title = "Accueil"
+    title = "Développeur"
 
     steps = Steps.objects.all()
 
@@ -29,7 +30,7 @@ def tools(request):
 
 def services(request):
     """ services page """
-    title = 'services'
+    title = 'Services'
     services = Service.objects.all()
     
     context = {
