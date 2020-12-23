@@ -8,7 +8,7 @@ from .forms import ContactForm
 
 def index(request):
     """ Home page """
-    title = "Développeur"
+    title = "Créateur de site web"
 
     steps = Steps.objects.all()
 
