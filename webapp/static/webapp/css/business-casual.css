@@ -7,7 +7,7 @@
 body {
   font-family: 'Lora';
   /*background-image: linear-gradient(rgba(21, 15, 47, 0.8), rgba(21, 15, 47, 0.8)), url("../img/bg.jpg");*/
-  background: linear-gradient(-45deg, rgba(85, 55, 238, 0.431),  rgba(27, 17, 71, 0.774),  rgba(122, 134, 179, 0.897),  rgba(202, 82, 73, 0.897));
+  background: linear-gradient(-45deg, rgba(85, 55, 238, 0.431),  rgba(27, 17, 71, 0.774),  rgba(3, 23, 95, 0.753),  rgba(202, 82, 73, 0.897));
   background-size: 800% 800%;
   animation: gradient 10s ease infinite; 
 }
@@ -104,7 +104,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(21, 15, 47, 0.6);
+  background-color: rgba(21, 15, 47, 0.3);
   font-family: 'Raleway';
 }
 
