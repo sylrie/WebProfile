@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # Apps
     'user',
     'webapp',
+    'SRD',
 
     # Django
     'django.contrib.admin',

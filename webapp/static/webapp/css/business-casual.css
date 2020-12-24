@@ -7,13 +7,22 @@
 body {
   font-family: 'Lora';
   /*background-image: linear-gradient(rgba(21, 15, 47, 0.8), rgba(21, 15, 47, 0.8)), url("../img/bg.jpg");*/
-  background-color: rgba(21, 15, 47, 0.897);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: 1920px 1280px;
+  background: linear-gradient(-45deg, rgba(85, 55, 238, 0.431),  rgba(27, 17, 71, 0.774),  rgba(122, 134, 179, 0.897),  rgba(202, 82, 73, 0.897));
+  background-size: 800% 800%;
+  animation: gradient 10s ease infinite; 
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 body.modal-open .page-section{
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -95,7 +104,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(21, 15, 47, 0.9);
+  background-color: rgba(21, 15, 47, 0.6);
   font-family: 'Raleway';
 }
 
@@ -142,11 +151,13 @@ li::marker {
 }
 .btn-xl {
   font-weight: 700;
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-size: 1rem;
+  padding: auto;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 24px;
 }
 
 .intro {

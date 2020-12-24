@@ -8,7 +8,11 @@ from .forms import ContactForm
 
 def index(request):
     """ Home page """
-    title = "Créateur de site web"
+
+    if request.user.is_superuser and not request.GET.get("name"):
+        return redirect('SRD_home')
+    
+    title = "Accueil"
 
     steps = Steps.objects.all()
 

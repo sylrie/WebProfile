@@ -8,7 +8,7 @@
     <span class="site-heading-lower">Sylvain Rieutor</span>
 </h1>
 <section class="page-section" id="contact">
-    <div class="container cta">
+    <div class="container">
         <div class="cta-inner px-4">
             {% if message %}
             <div class="text-center">
@@ -28,9 +28,9 @@
                 </form>
             </div>
             {% else %}
-            <div class="row mt-lg-6 justify-content-center">
-                <div class="col-lg-5 mx-lg-0">
-                    <div>
+            <div class="row mt-lg-6 justify-content-center align-items-center">
+                <div class="col-lg-5 ">
+                    <div class="cta rounded text-white ">
                         <div class="text-center">
                             <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'webapp/img/about.png' %}"
                             alt="profile image" style="max-height: 14rem;">
@@ -41,15 +41,15 @@
                             </h2>
                             <div class="row social justify-content-center my-3">
                                 {% for social in socials %}
-                                <a class="text-muted col-2 text-center" href="{{ social.link }}" target="_blank" title="{{ social.name }}">
-                                    <i class="fab {{ social.logo }} fa-lg"></i>
+                                <a class="link col-2 text-center" href="{{ social.link }}" target="_blank" title="{{ social.name }}">
+                                    <i class="fab {{ social.logo }} fa-2x"></i>
                                 </a>
                                 
                                 {% endfor %}
                             </div>
                             {% for contact in contacts %}
-                            <p class="mb-2 text-muted text-center">
-                                <a class="link text-muted" href="{{ contact.link }}">
+                            <p class="mb-2  text-center">
+                                <a class="link" href="{{ contact.link }}">
                                     <i class="fas {{ contact.logo }}"></i>
                                     {{ contact.value }}
                                 </a>
@@ -59,38 +59,40 @@
                     </div>
                 </div>
                 <div class="col-lg-7 pl-lg-4 mt-lg-0 mt-3" id="message-me">
-                    <h2 style="font-size: 140%;">Une idée? Une question? <strong>Parlons en !</strong></h2>
-                    <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
-                        {% csrf_token %}
-                        <div class="row align-items-stretch mb-5">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
-                                        required="required"/>
-                                    <p class="help-block text-danger"></p>
+                    <div class="cta rounded text-white py-4 px-2">
+                        <h2 style="font-size: 140%;">Une idée? Une question? <b>Parlons en !</b></h2>
+                        <form action="{% url 'contact_mail' %}" id="contactForm" method="post">
+                            {% csrf_token %}
+                            <div class="row align-items-stretch mb-5">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Nom *"
+                                            required="required"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                                            required="required"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group mb-md-0">
+                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
-                                        required="required"/>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group mb-md-0">
-                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Téléphone (optionnel)"/>
-                                    <p class="help-block text-danger"></p>
+                                <div class="col-md-12">
+                                    <div class="form-group form-group-textarea">
+                                        <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
+                                            required="required"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group form-group-textarea">
-                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre Message *"
-                                        required="required"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary btn-xl text-uppercase" type="post">Envoyer</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
             {% endif %}

@@ -1,0 +1,37 @@
+{% extends 'SRD/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1 class="site-heading text-center text-white ">
+    <span class="site-heading-upper text-primary mb-3">Développeur</span>
+    <span class="site-heading-lower mb-3">Site Web</span>
+    <span class="site-heading-lower mb-3">&</span>
+    <span class="site-heading-lower mb-3">Application</span><br>
+    <span class="small mb-3" style="text-transform: none;">Création sur mesure</span><br>   
+</h1>
+
+
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro-text left-0 bg-faded p-5 rounded">
+            {% for item in items %}
+            {{ item.name }} - {{ item.date.day }}/{{ item.date.month }}/{{ item.date.year }} - {{ item.purchase_cost }}€<br>
+        
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro-text left-0 bg-faded p-5 rounded">
+            {% for purchase in purchases %}
+            {{ purchase.item.item_type.name }} - {{ purchase.item.name }} - {{ purchase.due_date.month }}/{{ purchase.due_date.year }} - {{ purchase.amount }}€<br>
+        
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
