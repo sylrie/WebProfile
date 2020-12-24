@@ -192,7 +192,7 @@ li::marker {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(21, 15, 47, 0.8);
+  background-color: rgba(21, 15, 47, 0.308);
 }
 
 .cta .cta-inner {
