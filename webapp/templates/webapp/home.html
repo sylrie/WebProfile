@@ -38,14 +38,14 @@
   <div class="container" id="infos">
     <div class="row">
       <div class="col-xl-9 mx-auto">
-        <div class="cta text-center text-white rounded">
+        <div class="text-center text-white rounded px-2">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Accompagnement</span>
+            <span class="section-heading-upper text-primary">Accompagnement</span>
             <span class="section-lower"><em>Clés en main</em></span>
           </h2>
-          <div class="row rounded text-center px-2">
+          <div class="row rounded text-center justify-content-center px-2">
             {% for step in steps %}
-            <div class="col-md-4 my-3">
+            <div class="cta col-md-5 my-1 mx-1  border rounded">
                 <span class="fa-stack fa-3x">
                     <i class="fas fa-circle fa-stack-2x text-primary"></i>
                     <i class="fas {{ step.logo }} fa-stack-1x fa-inverse"></i>
