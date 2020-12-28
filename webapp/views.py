@@ -36,10 +36,11 @@ def services(request):
     """ services page """
     title = 'Services'
     services = Service.objects.all()
-    
+    steps = Steps.objects.all()
     context = {
         'title': title,
-        'services': services
+        'services': services,
+        'steps': steps,
     }
    
     return render(request, 'webapp/services.html', context)

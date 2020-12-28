@@ -20,14 +20,14 @@
             <span class="section-heading-upper">Solutions sur mesures</span>
           </h2>
           <p class="mb-3">
-            Face à la diversité et à la complexité du secteur développement, 
+            Face à la diversité et à la complexité du secteur <strong>développement</strong>, 
             il peut être difficile de savoir vers qui se tourner.
             Quel que soit votre besoin, 
-            je vous accompagne dans l'étude et l'analyse de votre projet 
-            ainsi que dans la mise en œuvre de solutions adaptées.
+            je vous <strong>accompagne</strong> dans l'étude et l'analyse de <strong>votre projet</strong>
+            ainsi que dans la mise en œuvre de <strong>solutions sur mesures</strong>.
           </p>         
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="{% url 'services' %}">En Savoir Plus</a>
+            <a class="btn btn-primary btn-xl" href="{% url 'contact_mail' %}">Contactez-moi</a>
           </div>
         </div>
       </div>
@@ -37,27 +37,34 @@
 <section class="page-section ">
   <div class="container" id="infos">
     <div class="row">
-      <div class="col-xl-9 mx-auto">
+      <div class="cta col-xl-9 mx-auto">
         <div class="text-center text-white rounded px-2">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper text-primary">Accompagnement</span>
+            <span class="section-heading-upper text-primary">Création du site Web</span>
             <span class="section-lower"><em>Clés en main</em></span>
           </h2>
-          <div class="row rounded text-center justify-content-center px-2">
-            {% for step in steps %}
-            <div class="cta col-md-5 my-1 mx-1  border rounded">
-                <span class="fa-stack fa-3x">
-                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fas {{ step.logo }} fa-stack-1x fa-inverse"></i>
-                </span>
-                <h3 class="section-heading">{{ step.name }}</h3>
-                <p class="">{{ step.infos }}</p>
+            <div class="justify-content-center pb-4" style="font-size: large;">
+              <p><i>" Tu s'occupes de rien, je s'occupe de tout ! "</i></p>
+              <div class="row justify-content-center">
+                <uo class="text-left" >
+                  <strong>
+                    <li class="py-1">Analyse du projet</li>
+                    <li class="py-1">Développement de la solution</li>
+                    <li class="py-1">Hébergement</li>
+                    <li class="py-1">Déploiement</li>
+                    <li class="py-1">Nom de domaine (DNS)</li>
+                    <li class="py-1">Optimisation du SEO</li>
+                    <li class="py-1">Optimisaiton des performances</li>
+                    <li class="py-1">Maintenance</li>
+                  </strong>
+                </uo>
+              </div>
             </div>
-            {% endfor %}
+           
             <div class="intro-button mx-auto pt-4">
-              <a class="btn btn-primary btn-xl" href="{% url 'contact_mail' %}">Contactez-moi</a>
+              <a class="btn btn-primary btn-xl" href="{% url 'services' %}">En Savoir Plus</a>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>

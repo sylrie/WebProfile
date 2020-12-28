@@ -7,9 +7,9 @@
 body {
   font-family: 'Lora';
   /*background-image: linear-gradient(rgba(21, 15, 47, 0.8), rgba(21, 15, 47, 0.8)), url("../img/bg.jpg");*/
-  background: linear-gradient(-45deg, rgba(85, 55, 238, 0.431),  rgba(27, 17, 71, 0.774),  rgba(3, 23, 95, 0.753),  rgba(202, 82, 73, 0.897));
+  background: linear-gradient(-45deg, rgba(85, 55, 238, 0.821),  rgba(27, 17, 71, 0.774),  rgba(3, 23, 95, 0.753),  rgb(202, 82, 73));
   background-size: 1000% 1000%;
-  animation: gradient 10s ease infinite; 
+  animation: gradient 8s ease infinite; 
 }
 
 @keyframes gradient {

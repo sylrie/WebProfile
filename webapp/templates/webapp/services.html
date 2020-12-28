@@ -5,9 +5,84 @@
 <h1 class="site-heading text-center text-white ">
   <span class="site-heading-upper text-primary mb-3">Les Services</span>
   <span class="site-heading-lower mb-3">Création</span>
-  <span class="site-heading-lower mb-3">du</span>
-  <span class="site-heading-lower mb-3">site</span><br>
+  <span class="site-heading-lower mb-3">sur</span>
+  <span class="site-heading-lower mb-3">mesure</span><br>
 </h1>
+
+<section class="page-section ">
+  <div class="container" id="infos">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="text-center text-white rounded px-2">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper text-primary">Accompagnement</span>
+            <span class="section-lower"><em>Clés en main</em></span>
+          </h2>
+          <div class="row rounded text-center justify-content-center px-2">
+ 
+            <div class="cta col-md-5 my-1 mx-1  border rounded">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3 class="section-heading">Analyse</h3>
+                <p class="">Échange sur votre activité, votre environnement et vos idées afin d'analyser les besoins et objectifs.</p>
+            </div>
+
+            <div class="cta col-md-5 my-1 mx-1  border rounded">
+              <span class="fa-stack fa-3x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="section-heading">UX / UI Design</h3>
+              <p class="">Définition de l'identité visuelle à utiliser pour le webdesign de votre site et des prototypes des pages.</p>
+            </div>
+
+            <div class="cta col-md-5 m-1 border rounded">
+              <span class="fa-stack fa-3x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="section-heading">Développement</h3>
+              <p class="">Développement de la structure, des fonctionnalités et intégration de la partie graphique adaptable a tous les types d'écran</p>
+            </div>
+
+            <div class="cta col-md-5 m-1 border rounded">
+              <span class="fa-stack fa-3x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="section-heading">Déploiement</h3>
+              <p class="">Définition des composants nécessaires, choix de l'hébergeur, configuration et déploiement.</p>
+            </div>
+
+            <div class="cta col-md-5 m-1 border rounded">
+              <span class="fa-stack fa-3x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-tachometer-alt fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="section-heading">Optimisation</h3>
+              <p class="">Le code est propre (W3C), l'ensemble des fichiers est compréssé et la vitesse de chargement est optimisée</p>
+            </div>
+
+            <div class="cta col-md-5 m-1 border rounded">
+              <span class="fa-stack fa-3x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-hand-point-right fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="section-heading">Référencement</h3>
+              <p class="">Référencement naturel, ou SEO, définition et intégration des mots clés</p>
+            </div>
+
+            <div class="intro-button mx-auto pt-4">
+              <a class="btn btn-primary btn-xl" href="{% url 'contact_mail' %}">Contactez-moi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="page-section about-heading">
   <div class="container">
@@ -27,7 +102,7 @@
               Il permet de construire <strong>toutes sortes de sites web</strong> 
               avec toutes les bases nécessaires, telle que la sécurité des applications.
               Il est utilisé par nombreux sites web tels que 
-              <strong>Pinterest</strong>, <strong>Mozilla</strong> ou encore <strong>Instagram</strong>.
+              <b>Pinterest</b>, <b>Mozilla</b> ou encore <b>Instagram</b>.
             </p>
           </div>
       </div>
@@ -37,19 +112,19 @@
 
 {% for service in services %}
 {% with 'webapp/img/'|add:service.img as image %}
-<section class="page-section">
-  <div class="container">
+<section class="page-section justify-content-center">
+  <div class="container col-md-6 ">
     <div class="product-item">
-      <div class="product-item-title d-flex">
-        <div class="bg-faded p-5 d-flex ml-auto rounded">
-          <h2 class="section-heading mb-0">
+      <div class="product-item-title d-flex justify-content-center">
+        <div class="bg-faded col-md-6 p-5 d-flex ml-auto rounded">
+          <h2 class="section-heading mb-0 col">
             <span class="section-heading-upper">{{ service.title }}</span>
             <span class="section-lower">{{ service.name }}</span>
           </h2>
         </div>
       </div>
-      <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" 
-        src="{% static image %}" alt="{{ service.title }}">
+      <img class="product-item-img col-md-6 mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" 
+        src="{% static image %}" alt="{{ service.title }}" style="max-width: 400px;">
       <div class="product-item-description d-flex mr-auto">
         <div class="bg-faded p-5 rounded">
           <p class="mb-0">{{ service.details }}</p>
