@@ -46,11 +46,6 @@ EMAIL_USE_TLS = True
 # Application definition
 
 INSTALLED_APPS = [
-    # Apps
-    'user',
-    'webapp',
-    'SRD',
-
     # Django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -58,13 +53,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps', 
+    
+    # Apps
+    'user',
+    'webapp',
+    'SRD',
 ]
 
 MIDDLEWARE = [
-    # Simplified static file serving.
-    # https://warehouse.python.org/project/whitenoise/
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'compression_middleware.middleware.CompressionMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
