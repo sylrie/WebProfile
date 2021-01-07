@@ -27,10 +27,8 @@
     <link rel="icon" type="image/ico" href="{% static 'webapp/img/sr.png' %}"/>
     <link rel="apple-touch-icon" type="image/ico" href="{% static 'webapp/img/sr.png' %}"/>
     
-    <!-- Font Awesome icons (free version)-->
-    {% if title == 'Contact' or title == 'Services' %}
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    {% endif %}
+    <!-- Font Awesome icons (free version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
     <!-- Bootstrap core CSS -->
     <link href="{% static 'webapp/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -66,7 +64,7 @@
               </a>
             <li>
             {% endif %}
-
+            
             {% if title == 'Accueil' %}
             <li class="nav-item active px-lg-4">
             {% else %}
