@@ -109,9 +109,7 @@
         </div>
       </div>
     </nav>
-    
-    
-    
+
     {% block content %}{% endblock %}
 
     <footer class="footer text-faded text-center py-3">
@@ -129,11 +127,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    {% if title == 'À propos' or title == 'Outils' %}
     <script src="{% static 'webapp/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'webapp/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'webapp/js/app.js' %}"></script>
-    {% endif %}
 </body>
   
 </html>
