@@ -10,9 +10,9 @@
 </h1>
 
 
-<section class="page-section clearfix">
+<section class="page-section cta">
     <div class="container">
-        <div class="intro-text left-0 bg-faded p-5 rounded">
+        <div class="cta-inner left-0 bg-faded p-5 rounded">
             {% for item in items %}
             {{ item.name }} - {{ item.date.day }}/{{ item.date.month }}/{{ item.date.year }} - {{ item.purchase_cost }}€<br>
         
@@ -21,9 +21,9 @@
     </div>
 </section>
 
-<section class="page-section clearfix">
+<section class="page-section cta">
     <div class="container">
-        <div class="intro-text left-0 bg-faded p-5 rounded">
+        <div class="cta-inner left-0 bg-faded p-5 rounded">
             {% for purchase in purchases %}
             {{ purchase.item.item_type.name }} - {{ purchase.item.name }} - {{ purchase.due_date.month }}/{{ purchase.due_date.year }} - {{ purchase.amount }}€<br>
         
