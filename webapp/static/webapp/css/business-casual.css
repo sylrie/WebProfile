@@ -107,7 +107,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(21, 15, 47, 0.3);
+  background-color: rgba(21, 15, 47, 0.5);
   font-family: 'Raleway';
 }
 
@@ -299,7 +299,7 @@ li::marker {
 }
 
 .footer {
-  background-color:rgba(21, 15, 47, 0.3)
+  background-color:rgba(21, 15, 47, 0.5)
 }
 
 .text-primary {
