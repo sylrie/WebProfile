@@ -10,7 +10,6 @@ body {
   background: linear-gradient(-45deg, rgba(190, 21, 9, 0.527), rgba(110, 11, 4, 0.815),  rgba(27, 17, 71, 0.774), rgba(27, 17, 71, 0.774));
   background-size: 1000% 1000%;
   animation: gradient 10s ease infinite; 
-  text-shadow: 2px 2px 3px black;
 }
 
 @keyframes gradient {
@@ -64,14 +63,14 @@ p {
   display: block;
   font-size: 2.2rem;
   font-weight: 800;
-
+  text-shadow: 1px 1px 2px black;
 }
 
 .site-heading .site-heading-lower {
   font-size: 2rem;
   font-weight: 300;
   line-height: 2rem;
-  
+  text-shadow: 1px 1px 1px #e456438f;
 
 }
 
@@ -106,7 +105,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(21, 15, 47, 0.48);
+  background-color: rgba(21, 15, 47, 0.3);
   font-family: 'Raleway';
 }
 
@@ -115,10 +114,9 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.835);
   font-weight: 800;
   transition: 0.2s;
-  
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
@@ -126,7 +124,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: rgba(252, 4, 4, 0.732);
@@ -165,7 +163,6 @@ li::marker {
 
 .intro {
   position: relative;
-  text-shadow: 1px 1px 2px rgba(65, 63, 63, 0.376);
 }
 
 @media (min-width: 992px) {
@@ -196,7 +193,7 @@ li::marker {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(21, 15, 47, 0.534);
+  background-color: rgba(21, 15, 47, 0.308);
 }
 
 .cta .cta-inner {
@@ -204,7 +201,6 @@ li::marker {
   padding: 3rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
-  text-shadow:none;
 }
 
 .cta-inner-tool {
@@ -299,7 +295,7 @@ li::marker {
 }
 
 .footer {
-  background-color: rgba(21, 15, 47, 0.48)
+  background-color:rgba(21, 15, 47, 0.3)
 }
 
 .text-primary {
